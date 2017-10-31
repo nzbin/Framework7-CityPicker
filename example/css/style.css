@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.phone, .phone iframe {
+    height: 100%;
+    width: 100%;
+}
+
+@media(min-width:765px) {
+    .phone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #111;
+        border-radius: 55px;
+        box-shadow: 0px 0px 0px 2px #aaa;
+        width: 320px;
+        height: 568px;
+        margin: -400px 0 0 -160px;
+        padding: 105px 25px;
+    }
+
+    .phone::before {
+        content: '';
+        width: 60px;
+        height: 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        background: #333;
+        top: 50px;
+    }
+
+    .phone::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+        bottom: 20px;
+        border-radius: 100%;
+        box-sizing: border-box;
+        border: 5px solid #333;
+    }
+
+    .phone iframe {
+        width: 320px;
+        height: 568px;
+        display: block;
+        width: 100%;
+    }
+
+}
+
+/*LOOP - Font Size */
+.f-s-2 {
+    font-size: 2px !important;
+}
+
+.f-s-4 {
+    font-size: 4px !important;
+}
+
+.f-s-6 {
+    font-size: 6px !important;
+}
+
+.f-s-8 {
+    font-size: 8px !important;
+}
+
+.f-s-10 {
+    font-size: 10px !important;
+}
+
+.f-s-12 {
+    font-size: 12px !important;
+}
+
+.f-s-14 {
+    font-size: 14px !important;
+}
+
+.f-s-16 {
+    font-size: 16px !important;
+}
+
+.f-s-18 {
+    font-size: 18px !important;
+}
+
+.f-s-20 {
+    font-size: 20px !important;
+}
+
+.f-s-22 {
+    font-size: 22px !important;
+}
+
+.f-s-24 {
+    font-size: 24px !important;
+}
+
+.f-s-26 {
+    font-size: 26px !important;
+}
+
+.f-s-28 {
+    font-size: 28px !important;
+}
+
+.f-s-30 {
+    font-size: 30px !important;
+}
+
+.f-s-32 {
+    font-size: 32px !important;
+}
+
+.f-s-34 {
+    font-size: 34px !important;
+}
+
+.f-s-36 {
+    font-size: 36px !important;
+}
+
+.f-s-38 {
+    font-size: 38px !important;
+}
+
+.f-s-40 {
+    font-size: 40px !important;
+}
