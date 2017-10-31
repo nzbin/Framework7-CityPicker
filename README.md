@@ -1,7 +1,7 @@
 # Framework7-CityPicker
 CityPicker is made by Framework7 picker component which effects like iOS native select.
 
-#Demo
+# Demo
 [https://nzbin.github.io/Framework7-CityPicker/](https://nzbin.github.io/Framework7-CityPicker/)
 
 Scan the QR code below to view the demo on mobile.
