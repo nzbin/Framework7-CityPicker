@@ -18,15 +18,7 @@
      */
     function getProvince(regions) {
 
-        var provinceArr = [];
-
-        $.each(regions, function(province) {
-
-            provinceArr.push(province);
-
-        });
-
-        return provinceArr;
+        return regions['provincesArr'];
     }
 
     /**
@@ -37,15 +29,7 @@
      */
     function getCity(regions, provinceName) {
 
-        var cityArr = [];
-
-        $.each(regions[provinceName]['cities'], function(city) {
-
-            cityArr.push(city);
-
-        });
-
-        return cityArr;
+        return regions['provinces'][provinceName]['citiesArr'];
     }
 
     /**
@@ -57,15 +41,8 @@
      */
     function getArea(regions, provinceName, cityName) {
 
-        var areaArr = [];
+        return regions['provinces'][provinceName]['cities'][cityName]['areasArr'];
 
-        $.each(regions[provinceName]['cities'][cityName]['areas'], function(area) {
-
-            areaArr.push(area);
-
-        });
-
-        return areaArr;
     }
 
     // 初始化 Framework7
