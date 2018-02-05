@@ -47,12 +47,15 @@
 
     // 初始化 Framework7
     var myApp = new Framework7();
+    var s = new Date();
 
     // 初始化省市区
     var province = getProvince(regions),
         city = getCity(regions, '北京市'),
         area = getArea(regions, '北京市', '北京市');
-
+    console.log(getArea(regions, '广东省', '中山市') == 0)
+    var e = new Date();
+    console.log(e - s);
     // 保存 picker 选择的省
     var provinceSelect = '';
 
@@ -81,7 +84,11 @@
                         city = getCity(regions, province);
                         area = getArea(regions, province, city[0]);
                         picker.cols[1].replaceValues(city);
-                        picker.cols[2].replaceValues(area);
+                        if (area.length !== 0) {
+                            picker.cols[2].replaceValues(area);
+                        } else {
+                            picker.cols[2].replaceValues(city);
+                        }
                     }
                 }
             },
@@ -93,7 +100,11 @@
                 onChange: function(picker, city) {
                     if (picker.cols[2].replaceValues) {
                         area = getArea(regions, provinceSelect, city);
-                        picker.cols[2].replaceValues(area);
+                        if (area.length !== 0) {
+                            picker.cols[2].replaceValues(area);
+                        } else {
+                            picker.cols[2].replaceValues([city]);
+                        }
                     }
                 }
             },
