@@ -1,7 +1,5 @@
 /**
  *
- * cityPicker.js
- *
  * cityPicker is made by Framework picker component which effects like iOS native select.
  *
  * nzb329@163.com
@@ -67,6 +65,8 @@
                               </div>\
                           </div>\
                       </div>',
+    // 设置初始默认值
+    // value: ['山东省', '滨州市', '滨城区'],
     cols: [
       // 省相关
       {
