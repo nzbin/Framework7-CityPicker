@@ -13,4 +13,4 @@ CityPicker 是使用 Framework7 的 Picker 组件制作的移动端城市级联�
 
 扫描下方二维码在手机端查看演示效果：
 
-![''](http://images.cnblogs.com/cnblogs_com/nzbin/1106740/o_CityPicker-QRCode.png)
+![qrcode](./media/qrcode.png)
